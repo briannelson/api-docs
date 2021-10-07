@@ -22,6 +22,8 @@ When using the GET index method, the results will be filtered using these parame
 |`global_master_campaign_id`|Yes|Restrict results to one or more specific gmcid|
 |`per_page`|No|Restrict number of contacts in result <br><b>Default value: 25</b> |
 |`page`|No|Specifies which page of results to return <br><b>Default value: 1</b>|
+|`sort_by`|No|Specifies what column to sort by. Valid columns are: impotant<br><b>Default value: created_at</b> |
+|`sort_dir`|No|Specifies the sort direction. Can be either asc or desc <br><b>Default value: asc</b> |
 
 
 ### Examples:
@@ -45,7 +47,7 @@ curl -L -g -X GET 'https://data-connect-lips.ganettdigital.com/contact_interacti
   -H 'Content-Type: application/json' \
   -H 'x-api-key: SJNPPSecret'
 ```
-###Contact Interactions
+### Contact Interactions
 **Contact**
 | Field Name | Datatype | Nullable | Description |
 |---|---|---|---|
